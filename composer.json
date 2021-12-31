@@ -1,0 +1,33 @@
+{
+  "name": "alexsousa4067/cadastro-de-veiculos",
+  "description": "Sistema de cadastro de veículos",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "José Alex de Sousa Medeiro",
+      "email": "alex.sousa.as4067@gmail.com",
+      "homepage": "https://github.com/alexsousa4067",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.3",
+    "ext-pdo": "^7.1",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/paginator": "^1.0",
+    "coffeecode/router": "^1.0",
+    "ext-json": "*"
+  }
+}

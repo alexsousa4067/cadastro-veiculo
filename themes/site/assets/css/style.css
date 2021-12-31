@@ -1,0 +1,322 @@
+body {
+    font-family: sans-serif;
+    max-width: 100%;
+}
+
+/*DEFAULT PAGINATOR*/
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.paginator a, .paginator span {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #cccccc;
+    border-right: 0;
+    color: #555555;
+    font-weight: var(--weight-bold);
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.paginator a:first-of-type {
+    -webkit-border-radius: var(--radius-normal) 0 0 var(--radius-normal);
+    -moz-border-radius: var(--radius-normal) 0 0 var(--radius-normal);
+    border-radius: var(--radius-normal) 0 0 var(--radius-normal);
+}
+
+.paginator a:last-of-type {
+    border-right: 1px solid #cccccc;
+    -webkit-border-radius: 0 var(--radius-normal) var(--radius-normal) 0;
+    -moz-border-radius: 0 var(--radius-normal) var(--radius-normal) 0;
+    border-radius: 0 var(--radius-normal) var(--radius-normal) 0;
+}
+
+.paginator a:hover {
+    background: var(--gradient-green);
+    background-size: 200%;
+    color: #FBFBFB;
+}
+
+.paginator span {
+    background: #cccccc;
+}
+
+
+/*NOT FOUND PAGE 404*/
+.not_found {
+    text-align: center;
+    color: #555555;
+}
+
+.not_found .error {
+    font-size: 8em;
+    font-weight: var(--weight-light);
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.not_found_header {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.not_found p a {
+    color: var(--color-green);
+    text-decoration: none;
+    font-weight: var(--weight-bold);
+}
+
+.not_found p a:hover {
+    text-decoration: underline;
+}
+
+.not_found_btn {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 20px 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: var(--weight-bold);
+}
+
+.main_header{
+    background: var(--color-dark);
+    color: #ffffff;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sub_header{
+    padding: 20px;
+    background: var(--color-default);
+}
+.sub_header_nav ul{
+    display: flex;
+}
+
+.sub_header_nav a{
+    display: block;
+    padding: 5px 10px;
+    color: #dddddd;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sub_header_nav a:hover{
+    color: #ffffff;
+}
+
+.main_content{
+    padding: 40px 5%;
+}
+
+.section_title{
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--color-default);
+    border-bottom: 5px solid var(--color-default);
+}
+
+.vehicle_list_box{
+    overflow-x: scroll;
+    width: 100%;
+}
+.vehicle_list{
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 800px;
+    text-align: center;
+}
+
+.vehicle_list tr:nth-child(even){
+    background: #dddddd;
+}
+
+.vehicle_list th,
+.vehicle_list td{
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+}
+
+.vehicle_list th{
+    background: var(--color-dark);
+    color: #ffffff;
+}
+
+.vehicle_list li{
+    border-left: 3px solid #888;
+    margin-bottom: 5px;
+}
+
+.vehicle_list a{
+    color: var(--color-default);
+}
+
+.crud_form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: auto;
+}
+
+.crud_form .label_box{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.crud_form .label{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.crud_form .input_default{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: var(--color-default);
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.crud_form .checkbox_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.checkbox_container .input_checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.crud_form .btn{
+    padding: 10px 20px;
+    background: var(--color-dark);
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.crud_form .btn:hover{
+    background: #333333;
+}
+
+.main_content_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_content .btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background: var(--color-default);
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.main_content .btn:hover{
+    background: var(--color-dark);
+}
+
+
+.modal_box{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000000aa;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    max-width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 4px;
+}
+
+.search_form h1{
+    display: block;
+    flex-basis: 90%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--color-default);
+    text-transform: uppercase;
+}
+
+.search_form .close{
+    flex-basis: 10%;
+    text-align: center;
+    padding: 8px 5px;
+    background: var(--color-red);
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.search_form input:not([type='checkbox']){
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: var(--color-default);
+    border: 1px solid #cccccc;
+}
+
+.search_form .checkbox_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.search_form input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.search_form .checkbox_label{
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.search_form .btn{
+    flex-basis: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: var(--color-dark);
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
